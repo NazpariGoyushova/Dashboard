@@ -1,0 +1,177 @@
+:root{
+--blue: hsl(246, 80%, 60%);
+--light-red-work: hsl(15, 100%, 70%);
+--soft-blue-play: hsl(195, 74%, 62%);
+--light-red-study: hsl(348, 100%, 68%);
+--lime-green: hsl(145, 58%, 55%);
+--violet-social: hsl(264, 64%, 52%);
+--soft-orange-self-care: hsl(43, 84%, 65%);
+
+
+
+--very-dark-blue: hsl(226, 43%, 10%);
+--dark-blue: hsl(235, 46%, 20%);
+--desatured-blue: hsl(235, 45%, 61%);
+--pale-blue: hsl(236, 100%, 87%);
+}
+
+
+body{
+    background: var(--very-dark-blue);
+
+}
+.container{
+    width: 90%;
+    margin: 2rem auto;
+    border:solid red 1px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.cards{
+    background-color: var(--dark-blue);
+    border-radius: 1.5rem;
+    width: 100%;
+
+}
+.card-info{
+    background-color: var(--blue);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.7rem;
+}
+.cards .card-info img{
+    width: 25%;
+    border-radius: 50%;
+    border:3px solid white;
+}
+.cards .card-info .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.cards .card-info .info p{
+    color: var(--pale-blue);
+    font-size: 1.5rem;
+}
+.cards .card-info .info .name{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 200;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2.5rem;
+
+
+}
+.items .time-item{
+    color: var(--desatured-blue);
+    font-size: 1.7rem;
+
+
+}
+.time-item active-item{
+    color: white;
+
+}
+.items .time-item:hover{
+    color: white;
+    cursor: pointer;
+}
+.other-cards{
+    background-repeat: no-repeat;
+    background-color: var(--blue);
+    border: 1px solid red;
+    border-radius: 1.5rem;
+    background-position:90%;
+    width: 100%;
+
+}
+.other-cards .cards{
+    width: 100%;
+    margin-top: 4rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+    gap: 1rem;
+
+}
+.other-cards .cards .card{
+    border-radius: 1.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.other-cards .cards .card .heading{
+    color: white;
+    font-size: 1.7rem;
+
+}
+.other-cards .cards .card .points{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.other-cards .cards .card .points .point{
+    background-color: var(--pale-blue);
+    border-radius: 50%;
+    margin: .2rem;
+    width: .5rem;
+    height: .5rem;
+}
+.other-cards .cards .card .points .point:hover{
+    background-color: white;
+}
+.period{
+    width: 100%;
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+}
+.period .hours{
+    font-weight: 300;
+   color: white;
+   font-size: 2rem;
+}
+.period .definition{
+    color: var(--pale-blue);
+    font-size: 1.5rem;
+
+}
+.work{
+    background-image: url(../image/icon-work.svg); 
+    background-color: var(--dark-blue);
+}
+.play{
+    background-image: url(../images/icon-play.svg); 
+    background-color: var(--soft-blue-play);
+}
+.study{
+    background-image: url(../images/icon-study.svg); 
+    background-color: var(--light-red-study);
+}
+.exercise{
+    background-image: url(../image/icon-exercise.svg); 
+    background-color: var(--lime-green);
+}.social{
+    background-image: url(../image/icon-social.svg); 
+    background-color: var(--violet-social);
+}
+.self-care{
+    background-image: url(../image/icon-self-care.svg); 
+    background-color: var(--soft-orange-self-care);
+}
